@@ -12,9 +12,9 @@ const textToSpeech = new TextToSpeechV1({
 });
 
 //Converting Text to Speech
-function speek(comment){
+function listenAudio(comment){
     const synthesizeParams = {
-        text: req.body.comment,
+        text: req.body.comment.content,
         accept: 'audio/wav',
         voice: 'pt-BR_IsabelaV3Voice',
     };

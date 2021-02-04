@@ -1,6 +1,6 @@
 //Get All Comments
-exports.findAll = (req, res, next) => {
-    Comment.findAll({
+exports.getAllComments = (req, res, next) => {
+    Comment.getAllComments({
             include: [{
                content: db.content
             }],

@@ -6,6 +6,7 @@ export default function Interface(props) {
     const [data, setData] = useState({});
     const [input, setInput] = useState({})
 
+//Importing Functions From API
     async function getAllComments() {
         var res = Api.getAllComments();
         if (res.status === 200) {
@@ -27,6 +28,7 @@ export default function Interface(props) {
         }
     }
 
+//Controling the render of the all comments based in the state change
     useEffect(() => {
         getAllComments()
     }, [])
@@ -47,7 +49,7 @@ export default function Interface(props) {
                         {data.map(comment=>
                         <li className="comment-item">
                             <h5 className="comment-content">{comment.content}</h5>
-                            <button type="button" onclick={() => listenAudio}>Ouvir</button>
+                            <button type="button" onclick={(comment) => listenAudio}>Ouvir</button>
                         </li>
                         )} 
                     </ul>
