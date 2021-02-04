@@ -1,6 +1,11 @@
+const db = require("../models/index");
+const Comment = db.comment;
+const Sequelize = require("sequelize");
+const Op = db.Sequelize.Op;
+
 //Get All Comments
 exports.getAllComments = (req, res, next) => {
-    Comment.getAllComments({
+    Comment.findAll({
             include: [{
                content: db.content
             }],
@@ -18,6 +23,13 @@ exports.getAllComments = (req, res, next) => {
 
 //Comment Create
 exports.createComment = (req, res) => {
+    if (!req.body.content) {
+        res.status(400).send({
+          message: "Content can not be empty!"
+        });
+        return;
+      }
+
     Comment.create({
         content: req.body.content
         })
