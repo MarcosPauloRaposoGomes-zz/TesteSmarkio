@@ -29,8 +29,8 @@ export default class Api {
     }
 
     static async listenAudio() {
-        try {//Devo criar 
-            const res = await fetch(URL + '/listenAudio', {
+        try {
+            const res = await fetch(URL + '/textToSpeech', {
                 method: 'GET'
             })  
             return res;
