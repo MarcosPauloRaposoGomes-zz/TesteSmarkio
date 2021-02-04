@@ -1,0 +1,23 @@
+{
+  "development": {
+      "username": "root",
+      "password": "admin",
+      "database": "smarkio",
+      "host": "179.108.18.172",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "root",
+      "password": "admin",
+      "database": "smarkio",
+      "host": "179.108.18.172",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "admin",
+      "database": "smarkio",
+      "host": "179.108.18.172",
+      "dialect": "mysql"
+    }
+}

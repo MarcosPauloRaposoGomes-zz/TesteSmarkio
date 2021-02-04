@@ -1,0 +1,41 @@
+.container{
+
+}
+
+.container-interface{
+    display: flex;
+    justify-content: space-between;
+    background: #E5E5E5;
+}
+
+.container-input-comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.container-output-comments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.title{
+    color: #353942;
+    padding-bottom: 4px;
+}
+
+.comment-list{
+    list-style-type: none;
+}
+
+.comment-item{
+    padding: 4px;
+}
+
+.comment-content{
+    color: #353942;
+    padding-right: 4px;
+}
