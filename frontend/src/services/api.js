@@ -1,7 +1,7 @@
-//Chamar a api
+//Calling the API
 import {URL} from './servicesURL'
 
-//Interfaceamento do backend somando ao "AJAX"
+// Interfacing the backend with Remote Request (which would be the test's AJAX) 
 export default class Api {
     
     static async createComment(body) {
